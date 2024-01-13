@@ -2,6 +2,11 @@ import pytest
 
 from src.kata_fibonacci import fibonacci
 
+# Setup function
+
+# Teardown function
+
+# Or even better, define pytest fixtures
 
 def test_type_fibonacci_results():
     """ Test that the type returned by the Fibonacci function is the expected."""
@@ -34,9 +39,10 @@ def test_fibonacci_results_small_number():
 def test_fibonacci_results_negative_number():
     """ Test that the function correctly handles when a negative Fibonacci number is
      requested.  """
-    num_fibonacci = -2
-    with pytest.raises(ValueError):
-        fibonacci(num_fibonacci)
+    for item in [-1, -2, -10, -100]:
+        with pytest.raises(ValueError):
+            fibonacci(item)
+
 
 def test_fibonacci_results_float_number():
     """ Test that the function correctly handles when a float Fibonacci number is
