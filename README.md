@@ -6,3 +6,23 @@ Note: The Fibonacci Sequence is the series of numbers :
 
 The Fibonacci sequence starts with 0, 1. Every next number is found by adding up the two
 numbers before it.
+
+
+# Details of the kata resolution
+**Duration:**
+
+43 Min
+
+
+**Featuring:**
+* Using project structure.
+* Python venv (requirements.txt).
+* Tests.
+* Documentation (docstrings).
+* Typing.
+* git (.gitignore). 
+
+
+**Pending:**
+* Using pytest fixture.
+* Force a reduction in mouse usage.
